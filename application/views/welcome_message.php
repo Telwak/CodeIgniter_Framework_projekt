@@ -96,9 +96,8 @@ tr:nth-child(even) {
 	<div id="body">
 	<table>
   <tr>
-    <th>ID</th>
     <th>TEXT</th>
-
+	<th>ID</th>
   </tr>
 	<?php
 foreach ($xml as $value)
