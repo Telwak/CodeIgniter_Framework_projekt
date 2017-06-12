@@ -93,13 +93,25 @@ tr:nth-child(even) {
 <div id="container">
 	<h1>Lista rekordów!</h1>
 
+
 	<div id="body">
+	<?php 
+
+echo form_label('Wyszukaj:');
+echo form_open('email/send');
+echo form_label('TEXT: ');
+echo form_input('username');
+echo form_submit('search', 'Wyszukaj!');
+
+?>
+
 	<table>
   <tr>
     <th>TEXT</th>
 	<th>ID</th>
   </tr>
 	<?php
+	
 foreach ($xml as $value)
 {
 	?> <tr>
